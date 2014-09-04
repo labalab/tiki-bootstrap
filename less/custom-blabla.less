@@ -35,7 +35,61 @@ footer.main-footer .panel, footer.main-footer .panel .panel-heading {
 footer.main-footer .panel .panel-heading {
 	padding-bottom: 0;
 }
+.zone-bottom {
+    padding-top: 30px;
+    background: @blabla-navbar-bg;
+}
 /* Footer End */
+
+/* Page titles */
+.pagetitle,
+.pagetitle a {
+    font-family: @font-family-sans-serif;
+    text-transform: uppercase;
+    color: @blabla-blue;
+    margin-bottom: 10px;
+    line-height: auto;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.pagetitle-link {
+    border-bottom: 3px solid @blabla-blue;
+}
+/* Page titles End */
+
+/* Module : Upcoming events */
+.box-upcoming_events {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    .panel-heading {
+        background: transparent;
+        border-top: 1px solid @blabla-blue;
+        border-bottom: 1px solid @blabla-blue;
+        color: @blabla-blue;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: @font-family-sans-serif;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .event-num {
+        font-fanily: @font-family-monospace;
+        font-weight: bold;
+        font-size: 36px;
+        color: @blabla-blue;
+    }
+    .vevent {
+        .dtstart {
+            color: @blabla-blue;
+        }
+        .linkmodule {
+            color: white;
+        }
+    }
+}
+/* Module : Upcoming events End */
 
 // FIXME
 .highlight {
@@ -83,4 +137,9 @@ a.btn.btn-admin .icon {
 #mod-menuleft0 .navbar-default li {
 	display: block;
 	clear: both;
+}
+
+/* enlever marge sous navbar */
+.navbar {
+  margin-bottom:0
 }
