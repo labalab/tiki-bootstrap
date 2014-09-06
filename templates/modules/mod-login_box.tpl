@@ -138,7 +138,7 @@ if (jqueryTiki.no_cookie) {
 				<div class="siteloginbar_poppedup {*panel panel-body*} dropdown-menu pull-right">
 					{capture assign="close_tags"}</div></div></div></div>{$close_tags}{/capture}
 		{else if $mode eq "navbar"}
-			<div class="siteloginbar_popup navbar-right">
+			<div class="siteloginbar_dropdown navbar-right">
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">

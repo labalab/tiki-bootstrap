@@ -11,10 +11,15 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand sr-only" href="#">Brand</a>
+	<a class="navbar-brand" href="{$prefs.wikiHomePage}">
+		<i class="labalab-icon labalab-logo"></i>
+		<span class="site-title">
+			{$prefs.sitetitle}
+		</span>
+	</a>
 </div>
 
-<div id="collapsible-navbar-{$navbar_count}" class="collapse navbar-collapse">
+<div id="collapsible-navbar-{$navbar_count}" class="collapse navbar-collapse navbar-left">
 <ul class="nav navbar-nav">
 	{foreach from=$list item=item}
 		{if $item.children|count}
