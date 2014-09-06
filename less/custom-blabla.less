@@ -42,7 +42,6 @@ footer.main-footer .panel .panel-heading {
 /* Footer End */
 
 /* Page titles */
-.pagetitle,
 .pagetitle a {
     font-family: @font-family-sans-serif;
     text-transform: uppercase;
@@ -53,9 +52,19 @@ footer.main-footer .panel .panel-heading {
         text-decoration: none;
     }
 }
-.pagetitle-link {
+.pagetitle a {
     border-bottom: 3px solid @blabla-blue;
+    padding-bottom: 0;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+    }
 }
+
+.tiki_wiki_page .pagetitle a {
+    text-transform: none;
+}
+
 /* Page titles End */
 
 /* Module : Upcoming events */
@@ -143,3 +152,32 @@ a.btn.btn-admin .icon {
 .navbar {
   margin-bottom:0
 }
+.page-header {
+    border: none;
+    margin: 0;
+}
+
+.labalab-banner {
+ height:157px;
+ margin:0;
+ background-size:cover;
+ background-repeat:no-repeat;
+}
+.labalab-banner.tiny-banner {
+    height: 80px;
+}
+.sitetitle {
+ color: #fff;
+ font-size:72px;
+ padding-top:36px;
+ text-align:center;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+ color: #599ccc;
+}
+
+/* Articles */
+img.articleimage {
+    float: none;
+}
+/* Articles End */
