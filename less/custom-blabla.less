@@ -20,30 +20,41 @@
  * Prevent navbar from hiding page content
  * when document width to small
  */
-@media (max-width: 850px) {
+@media (max-width: 1080px) {
     body {
         padding-top: 80px;
     }
 }
 
+@media (max-width: 918px) {
+    body {
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    body {
+        padding-top: 240px;
+    }
+}
 /*.navbar .glyphicon {
 	font-family: sans-serif;
 }*/
 .navbar-inverse {
     .dropdown-menu {
-         background-color: @gray-dark;
-         color: white;
-         & > li > a {
-            color: white;
-
-            &:hover {
-                color: @blabla-blue;
+        background-color: @gray-dark;
+        color: white;
+        & > li {
+            & > a {
+                color: white;
+                &:hover {
+                    color: @gray-dark;
+                }
             }
         }
     }
     .navbar-brand {
-	    padding-bottom: 3px;
-        margin-right: 100px;
+        padding-bottom: 3px;
         font-size: 25px;
         &:hover {
             color: @blabla-blue;
@@ -58,6 +69,26 @@
             float: left;
             margin-right: 10px;
         }
+    }
+    .navbar-form {
+        input,
+        button{
+            max-height: 30px;
+        }
+    }
+}
+@media (min-width: @screen-sm-min) {
+    .navbar-form {
+        .form-control {
+            max-width: 100px;
+        }
+    }
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    &:hover {
+        color: @gray-dark;
+        background-color: white;
     }
 }
 @media (max-width: 1033px) {
@@ -85,7 +116,35 @@ a.navbar-brand {
 
 .siteloginbar_dropdown {
     .dropdown-menu {
+        padding: 10px;
         min-width: 250px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            & > li > a {
+                color: white;
+                &:hover {
+                    color: @blabla-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .form-group {
+        margin-bottom: 5px;
+        .rme {
+            margin-bottom: 0;
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .navbar-default {
+        background: transparent;
+        margin-top: 10px;
     }
 }
 
